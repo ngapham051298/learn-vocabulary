@@ -13,7 +13,7 @@ class CreateWorksTable extends Migration
      */
     public function up()
     {
-        Schema::create('works', function (Blueprint $table) {
+        Schema::create('words', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('audio');
@@ -29,6 +29,6 @@ class CreateWorksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('works');
+        Schema::dropIfExists('words');
     }
 }
